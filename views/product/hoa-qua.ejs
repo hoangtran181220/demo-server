@@ -1,0 +1,132 @@
+<section class="bg0 p-t-23 p-b-50">
+    <div class="container">
+        <div class="block1-txt-child1 flex-col-l">
+            <span class="block1-name ltext-102 trans-04 p-b-8 translate">
+                SAMSUNG
+            </span>
+            <div class="l-product-male">
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/11/02/a03.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Samsung Galaxy A03 - Chính hãng</p>
+                        <span class="l-product-male-desc-price">7.090.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/11/02/image-removebg-preview-5.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Samsung Galaxy S21 FE (5G) - Chính Hãng</p>
+                        <span class="l-product-male-desc-price">5.090.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/09/13/image-removebg-preview-5.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Samsung Galaxy A52s 5G - Chính hãng</p>
+                        <span class="l-product-male-desc-price">10.290.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/09/10/image-removebg-preview.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Samsung Galaxy A03s 4GB/64GB - Chính hãng</p>
+                        <span class="l-product-male-desc-price">3.390.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+            </div>
+            <div class="l-product-male">
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/08/11/f-tim.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Samsung Galaxy Z Fold3 5G - 512GB - Chính hãng</p>
+                        <span class="l-product-male-desc-price">44.590.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/08/11/bac2.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Samsung Galaxy Z Fold3 5G - 256GB - Chính hãng</p>
+                        <span class="l-product-male-desc-price">41.990.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/08/11/kem.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Samsung Galaxy Z Flip3 5G - 128GB - Chính hãng</p>
+                        <span class="l-product-male-desc-price">24.990.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/08/11/green.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Samsung Galaxy Z Flip3 5G - 256GB - Chính hãng</p>
+                        <span class="l-product-male-desc-price">26.090.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+            </div>
+            <span class="l-product-male-see-more">Xem Thêm...</span>
+        </div>
+        <div class="row isotope-grid">
+
+            <% listairpod.forEach(function (product) { %>
+            <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+                <div class="block2">
+                    <div class="block2-pic hov-img0">
+                        <img src="<%= product.imagePath %>" alt="IMG-PRODUCT" style="width:250px ;height:250px">
+
+                        <a href="#" onclick="showdata('<%= product.productname %>', '<%= product.price %>','<%= product.description %>',
+                                    '<%= product.imagePath %>','<%= product.category %>', '<%= product._id %>')"
+                            class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+                            Quick View
+                        </a>
+                    </div>
+
+                    <div class="block2-txt flex-w flex-t p-t-14">
+                        <div class="block2-txt-child1 flex-col-l ">
+                            <a href="/products/<%= product._id %>"
+                                class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                <%= product.productname %>
+                            </a>
+                            <a href="/products/<%= product._id %>"
+                                class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                <%= product.description %>
+                            </a>
+
+                            <span class="stext-105 cl3">
+                                $<%=product.price %>
+                            </span>
+                            <div>
+                                <img src="/images/star.svg" alt="/" />
+                                <img src="/images/star.svg" alt="/" />
+                                <img src="/images/star.svg" alt="/" />
+                                <img src="/images/star.svg" alt="/" />
+                                <img src="/images/star.svg" alt="/" />
+                            </div>
+                        </div>
+
+                        <div class="block2-txt-child2 flex-r p-t-3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <% }) %>
+
+            <!-- Load more -->
+            <!-- <div class="flex-c-m flex-w w-full p-t-45">
+            <a href="#" class="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04 translate">
+                Load More
+            </a>
+        </div> -->
+        </div>
+
+</section>

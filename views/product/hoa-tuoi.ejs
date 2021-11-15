@@ -1,0 +1,133 @@
+<section class="bg0 p-t-23 p-b-50">
+    <div class="container">
+        <div class="block1-txt-child1 flex-col-l">
+            <span class="block1-name ltext-102 trans-04 p-b-8 translate">
+                APPLE
+            </span>
+            <div class="l-product-male">
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2020/11/04/se-40.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Apple Watch SE (GPS) 40mm - Viền nhôm dây cao su - Chính hãng VN/A</p>
+                        <span class="l-product-male-desc-price">6.990.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/09/15/image-removebg-preview-11.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Apple iPhone 13 - Chính hãng VN/A</p>
+                        <span class="l-product-male-desc-price">21.090.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/09/15/image-removebg-preview-13.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Apple iPhone 13 Mini - Chính hãng VN/A</p>
+                        <span class="l-product-male-desc-price">18.690.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/09/15/image-removebg-preview-16.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Apple iPhone 13 Pro - Chính hãng VN/A</p>
+                        <span class="l-product-male-desc-price">26.990.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+            </div>
+            <div class="l-product-male">
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/09/15/image-removebg-preview-15.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Apple iPhone 13 Pro Max - Chính hãng VN/A</p>
+                        <span class="l-product-male-desc-price">29.990.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/04/22/11.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Apple iPad Pro M1 11" - (2021) - Wifi - 128GB - Chính hãng Apple Việt Nam</p>
+                        <span class="l-product-male-desc-price">19.990.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2021/03/19/iphone-11.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Apple iPhone 11 - 128GB - Chính hãng VN/A</p>
+                        <span class="l-product-male-desc-price">14.690.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+                <div class="l-product-male-item">
+                    <img src="https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2020/11/17/macmoi256.png" alt="" class="l-product-male-img">
+                    <div class="l-product-male-desc">
+                        <p class="l-product-male-desc-name">Apple M1 - MacBook Air 13" 256GB 2020 - Chính hãng Apple Việt Nam</p>
+                        <span class="l-product-male-desc-price">24.090.000đ</span>
+                        <span class="l-product-male-desc-status">_new_</span>
+                    </div>
+                </div>
+            </div>
+            <span class="l-product-male-see-more">Xem Thêm...</span>
+        </div>
+        <div class="row isotope-grid">
+
+            <% listmacbooks.forEach(function (product) { %>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+                <div class="block2">
+                    <div class="block2-pic hov-img0">
+                        <img src="<%= product.imagePath %>" alt="IMG-PRODUCT" style="width:250px;height:250px">
+
+                        <a href="#" onclick="showdata('<%= product.productname %>', '<%= product.price %>','<%= product.description %>',
+                                    '<%= product.imagePath %>','<%= product.category %>', '<%= product._id %>')"
+                            class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+                            Quick View
+                        </a>
+                    </div>
+
+                    <div class="block2-txt flex-w flex-t p-t-14">
+                        <div class="block2-txt-child1 flex-col-l ">
+                            <a href="/products/<%= product._id %>"
+                                class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                <%= product.productname %>
+                            </a>
+                            <a href="/products/<%= product._id %>"
+                                class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                <%= product.description %>
+                            </a>
+
+                            <span class="stext-105 cl3">
+                                $<%=product.price %>
+                            </span>
+                            <div>
+                                <img src="/images/star.svg" alt="/" />
+                                <img src="/images/star.svg" alt="/" />
+                                <img src="/images/star.svg" alt="/" />
+                                <img src="/images/star.svg" alt="/" />
+                                <img src="/images/star.svg" alt="/" />
+                            </div>
+                        </div>
+
+                        <div class="block2-txt-child2 flex-r p-t-3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <% }) %>
+
+            <!-- Load more -->
+            <!-- <div class="flex-c-m flex-w w-full p-t-45">
+            <a href="#" class="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04 translate">
+                Load More
+            </a>
+        </div> -->
+        </div>
+
+</section>
